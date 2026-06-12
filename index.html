@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="weather-info-wrap">
+        <div id="weather-info">
+            <div id="location"></div>
+            <div class="primary-info">
+                <div class="primary-info-left" id="main-temperature"></div>
+                <div class="primary-info-right">
+                    <img id="weather-icon">
+                    <div id="weather-main"></div>
+                </div>
+            </div>
+            <hr>
+            <div class="secondary-info">
+                <div class="secondary-info-top">
+                    <div id="humidity"></div>
+                    <div id="feels-like"></div>
+                </div>
+                <div class="secondary-info-bottom">
+                    <div class="secondary-info-bottom-left">
+                        <div id="wind"></div>
+                        <div id="wind-gust"></div>
+                    </div>
+                    <div class="secondary-info-bottom-right hidden" id="compass">
+                        <span id="compass-arrow">
+                            <span class="arrow-head"></span>
+                        </span>
+                        <span class="compass-direction north">N</span>
+                        <span class="compass-direction east">E</span>
+                        <span class="compass-direction south">S</span>
+                        <span class="compass-direction west">W</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="btn-wrap">
+        <span>WEATHER FOR:</span>
+        <select id="location-selector">
+            <option value=""></option>
+            <option value="new york">New York</option>
+            <option value="los angeles">Los Angeles</option>
+            <option value="chicago">Chicago</option>
+            <option value="paris">Paris</option>
+            <option value="tokyo">Tokyo</option>
+            <option value="london">London</option>
+        </select>
+        <button id="get-weather-btn">Get Weather</button>
+    </div>
+    <script async src="script.js"></script>
+</body>
+
+</html>
